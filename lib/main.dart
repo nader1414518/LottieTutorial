@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Lottie Tutorial',
-      theme: ThemeData.dark(),
+      theme: ThemeData.light(),
       home: HomeScreen(),
     );
   }
