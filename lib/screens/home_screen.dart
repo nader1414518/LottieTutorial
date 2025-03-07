@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:lottie_tutorial/utils/lotties_utils.dart';
 import 'package:lottie_tutorial/widgets/lottie_widget.dart';
 
 // ignore: must_be_immutable
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
+  @override
+  _HomeScreenState createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
   bool isLoading = false;
   String lottieSrc = "";
-
-  HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +37,22 @@ class HomeScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     ElevatedButton.icon(
-                      onPressed: () {},
+                      onPressed: () async {
+                        setState(() {
+                          lottieSrc = LottiesUtils.loading1;
+                          isLoading = true;
+                        });
+
+                        await Future.delayed(
+                          const Duration(
+                            seconds: 5,
+                          ),
+                        );
+
+                        setState(() {
+                          isLoading = false;
+                        });
+                      },
                       label: const Text(
                         "Show Loading 1",
                       ),
