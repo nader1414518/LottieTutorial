@@ -25,6 +25,9 @@ class _HomeScreenState extends State<HomeScreen> {
           ? Center(
               child: LottieWidget(src: lottieSrc),
             )
+          // ? const Center(
+          //     child: CircularProgressIndicator(),
+          //   )
           : ListView(
               padding: const EdgeInsets.symmetric(
                 vertical: 20,
