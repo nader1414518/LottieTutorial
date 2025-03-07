@@ -59,6 +59,151 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ],
                 ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    ElevatedButton.icon(
+                      onPressed: () async {
+                        setState(() {
+                          lottieSrc = LottiesUtils.loading2;
+                          isLoading = true;
+                        });
+
+                        await Future.delayed(
+                          const Duration(
+                            seconds: 5,
+                          ),
+                        );
+
+                        setState(() {
+                          isLoading = false;
+                        });
+                      },
+                      label: const Text(
+                        "Show Loading 2",
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    ElevatedButton.icon(
+                      onPressed: () async {
+                        setState(() {
+                          lottieSrc = LottiesUtils.loading3;
+                          isLoading = true;
+                        });
+
+                        await Future.delayed(
+                          const Duration(
+                            seconds: 5,
+                          ),
+                        );
+
+                        setState(() {
+                          isLoading = false;
+                        });
+                      },
+                      label: const Text(
+                        "Show Loading 3",
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    ElevatedButton.icon(
+                      onPressed: () async {
+                        setState(() {
+                          lottieSrc = LottiesUtils.loading4;
+                          isLoading = true;
+                        });
+
+                        await Future.delayed(
+                          const Duration(
+                            seconds: 5,
+                          ),
+                        );
+
+                        setState(() {
+                          isLoading = false;
+                        });
+                      },
+                      label: const Text(
+                        "Show Loading 4",
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    ElevatedButton.icon(
+                      onPressed: () async {
+                        setState(() {
+                          lottieSrc = LottiesUtils.loading5;
+                          isLoading = true;
+                        });
+
+                        await Future.delayed(
+                          const Duration(
+                            seconds: 5,
+                          ),
+                        );
+
+                        setState(() {
+                          isLoading = false;
+                        });
+                      },
+                      label: const Text(
+                        "Show Loading 5",
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    ElevatedButton.icon(
+                      onPressed: () async {
+                        setState(() {
+                          lottieSrc = LottiesUtils.loading6;
+                          isLoading = true;
+                        });
+
+                        await Future.delayed(
+                          const Duration(
+                            seconds: 5,
+                          ),
+                        );
+
+                        setState(() {
+                          isLoading = false;
+                        });
+                      },
+                      label: const Text(
+                        "Show Loading 6",
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
     );
